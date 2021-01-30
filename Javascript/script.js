@@ -33,7 +33,7 @@ const lamboDiv = ()=>{
 
     //info paragraph 
     const info = document.createElement('p');
-    info.innerText = 'This is a lamborghini';
+    info.innerText = "The Aventador LP700–4 uses Lamborghini's new 700 PS (515 kW; 690 bhp) 6,498 cc (6.5 L; 396.5 cu in) 60° V12 engine weighing 235 kg. Known internally as the L539, the new engine is Lamborghini's fifth in-house engine and second V12 design.";
     // info header
     const h2 = document.createElement('h2');
     h2.innerText = 'Lamborghini aventador';
@@ -46,9 +46,9 @@ const lamboDiv = ()=>{
 
 
     //x 
-    const close= document.createElement('span');
-    close.classList.add('close');
-    close.innerText = 'Close';
+    const close= document.createElement('i');
+    close.classList.add('fas');
+    close.classList.add('fa-times-circle');
 
     //append all child elements
     div.appendChild(img);
@@ -59,7 +59,7 @@ const lamboDiv = ()=>{
 
     // add an event handler for deleting the div
 
-    document.querySelector('.close').onclick = deleteInfo;
+    document.querySelector('.fa-times-circle').onclick = deleteInfo;
 }
 
 
@@ -81,7 +81,7 @@ function bugattiDiv(){
 
     //info paragraph 
     const info = document.createElement('p');
-    info.innerText = 'This is a bugatti';
+    info.innerText = 'The Bugatti Chiron is a mid-engine two-seater sports car designed and developed in Germany by Bugatti Engineering GmbH and manufactured in Molsheim, France by French automobile manufacturer Bugatti Automobiles S.A.S.. ... The car is based on the Bugatti Vision Gran Turismo concept car.';
     // info header
     const h2 = document.createElement('h2');
     h2.innerText = 'Bugatti';
@@ -94,9 +94,9 @@ function bugattiDiv(){
 
 
     //x 
-    const close= document.createElement('span');
-    close.classList.add('close');
-    close.innerText = 'Close';
+    const close= document.createElement('i');
+    close.classList.add('fas');
+    close.classList.add('fa-times-circle');
 
     //append all child elements
     div.appendChild(img);
@@ -107,7 +107,7 @@ function bugattiDiv(){
 
     // add an event handler for deleting the div
 
-    document.querySelector('.close').onclick = deleteInfo;
+    document.querySelector('.fa-times-circle').onclick = deleteInfo;
 
 }
 
@@ -129,7 +129,7 @@ function ferarriDiv(){
 
     //info paragraph 
     const info = document.createElement('p');
-    info.innerText = 'This is a ferarri';
+    info.innerText = 'As proof of its lineage, the Spider possesses speeds that surpass its predecessors. It can go 0 to 62 mph in a whopping 3 seconds and from 62 to 124 mph after another 3 seconds.';
     // info header
     const h2 = document.createElement('h2');
     h2.innerText = 'Ferarri';
@@ -142,9 +142,9 @@ function ferarriDiv(){
 
 
     //x 
-    const close= document.createElement('span');
-    close.classList.add('close');
-    close.innerText = 'Close';
+    const close= document.createElement('i');
+    close.classList.add('fas');
+    close.classList.add('fa-times-circle');
 
     //append all child elements
     div.appendChild(img);
@@ -155,7 +155,7 @@ function ferarriDiv(){
 
     // add an event handler for deleting the div
 
-    document.querySelector('.close').onclick = deleteInfo;
+    document.querySelector('.fa-times-circle').onclick = deleteInfo;
 }
 
 //mclaren 
@@ -176,7 +176,7 @@ function mclarenDiv(){
 
     //info paragraph 
     const info = document.createElement('p');
-    info.innerText = 'This is a mclaren';
+    info.innerText = 'The mid-engined, rear-wheel-drive supercar – codenamed P14 – was actually conceived alongside the development of the 650S and promises to encapsulate the very best elements from McLaren’s illustrious line-up: the usability of the 570GT, the thrills of the 675LT and, perhaps, the pace of the P1 hypercar.';
     // info header
     const h2 = document.createElement('h2');
     h2.innerText = 'Mclaren';
@@ -189,9 +189,9 @@ function mclarenDiv(){
 
 
     //x 
-    const close= document.createElement('span');
-    close.classList.add('close');
-    close.innerText = 'Close';
+    const close= document.createElement('i');
+    close.classList.add('fas');
+    close.classList.add('fa-times-circle');
 
     //append all child elements
     div.appendChild(img);
@@ -202,7 +202,7 @@ function mclarenDiv(){
 
     // add an event handler for deleting the div
 
-    document.querySelector('.close').onclick = deleteInfo;
+    document.querySelector('.fa-times-circle').onclick = deleteInfo;
 
 }
 
