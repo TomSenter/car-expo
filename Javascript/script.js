@@ -9,7 +9,7 @@ const carDisplay= document.querySelector('.car-display');
 
 // event handler functions 
 
-//delete
+//delete the info section
 const deleteInfo = ()=>{
     const info = document.querySelector('.info');
     carDisplay.removeChild(info);
@@ -21,13 +21,29 @@ const lamboDiv = ()=>{
     const div = document.createElement('div');
     div.classList.add('info');
 
+
+    /*div to hold header and paragraph*/
+    const infoWriting = document.createElement('div');
+    infoWriting.classList.add('info-writing');
+
+
     //img
     const img = document.createElement('img');
     img.src = '../Images/aventador_roadster.jpg';
 
-    //info
+    //info paragraph 
     const info = document.createElement('p');
     info.innerText = 'This is a lamborghini';
+    // info header
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Lamborghini aventador';
+
+    // append to info writing
+    infoWriting.appendChild(h2);
+    infoWriting.appendChild(info);
+    
+
+
 
     //x 
     const close= document.createElement('span');
@@ -36,7 +52,7 @@ const lamboDiv = ()=>{
 
     //append all child elements
     div.appendChild(img);
-    div.appendChild(info);
+    div.appendChild(infoWriting);
     div.appendChild(close);
 
     carDisplay.appendChild(div);
@@ -49,16 +65,33 @@ const lamboDiv = ()=>{
 
 //bugatti
 function bugattiDiv(){
+
     const div = document.createElement('div');
     div.classList.add('info');
+
+
+    /*div to hold header and paragraph*/
+    const infoWriting = document.createElement('div');
+    infoWriting.classList.add('info-writing');
+
 
     //img
     const img = document.createElement('img');
     img.src = '../Images/bugatti-chiron.jpg';
 
-    //info
+    //info paragraph 
     const info = document.createElement('p');
     info.innerText = 'This is a bugatti';
+    // info header
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Bugatti';
+
+    // append to info writing
+    infoWriting.appendChild(h2);
+    infoWriting.appendChild(info);
+    
+
+
 
     //x 
     const close= document.createElement('span');
@@ -67,7 +100,7 @@ function bugattiDiv(){
 
     //append all child elements
     div.appendChild(img);
-    div.appendChild(info);
+    div.appendChild(infoWriting);
     div.appendChild(close);
 
     carDisplay.appendChild(div);
@@ -75,21 +108,38 @@ function bugattiDiv(){
     // add an event handler for deleting the div
 
     document.querySelector('.close').onclick = deleteInfo;
+
 }
 
 //ferarri
-
 function ferarriDiv(){
+
     const div = document.createElement('div');
     div.classList.add('info');
+
+
+    /*div to hold header and paragraph*/
+    const infoWriting = document.createElement('div');
+    infoWriting.classList.add('info-writing');
+
 
     //img
     const img = document.createElement('img');
     img.src = '../Images/ferarri-spider.jpeg';
 
-    //info
+    //info paragraph 
     const info = document.createElement('p');
     info.innerText = 'This is a ferarri';
+    // info header
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Ferarri';
+
+    // append to info writing
+    infoWriting.appendChild(h2);
+    infoWriting.appendChild(info);
+    
+
+
 
     //x 
     const close= document.createElement('span');
@@ -98,7 +148,7 @@ function ferarriDiv(){
 
     //append all child elements
     div.appendChild(img);
-    div.appendChild(info);
+    div.appendChild(infoWriting);
     div.appendChild(close);
 
     carDisplay.appendChild(div);
@@ -106,20 +156,37 @@ function ferarriDiv(){
     // add an event handler for deleting the div
 
     document.querySelector('.close').onclick = deleteInfo;
-
 }
-//mclaren
+
+//mclaren 
 function mclarenDiv(){
+
     const div = document.createElement('div');
     div.classList.add('info');
+
+
+    /*div to hold header and paragraph*/
+    const infoWriting = document.createElement('div');
+    infoWriting.classList.add('info-writing');
+
 
     //img
     const img = document.createElement('img');
     img.src = '../Images/mclaren.jpg';
 
-    //info
+    //info paragraph 
     const info = document.createElement('p');
     info.innerText = 'This is a mclaren';
+    // info header
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Mclaren';
+
+    // append to info writing
+    infoWriting.appendChild(h2);
+    infoWriting.appendChild(info);
+    
+
+
 
     //x 
     const close= document.createElement('span');
@@ -128,7 +195,7 @@ function mclarenDiv(){
 
     //append all child elements
     div.appendChild(img);
-    div.appendChild(info);
+    div.appendChild(infoWriting);
     div.appendChild(close);
 
     carDisplay.appendChild(div);
@@ -140,10 +207,15 @@ function mclarenDiv(){
 }
 
 
+
+    
+
 //event handler functions
 lambo.onclick = lamboDiv;
+
 bugatti.onclick = bugattiDiv;
 ferarri.onclick = ferarriDiv;
 mclaren.onclick = mclarenDiv;
+
 
 
