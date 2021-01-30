@@ -103,6 +103,40 @@ header nav a{
     
 }
 
+/*info section*/
+.info{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    z-index:3;
+    border-radius: 20px;
+    background-color: white;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 2fr;
+    
+}
+
+.info p{
+    color: black;
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    
+}
+
+.info img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px 0px 0px 0px;
+}
+
+.close{
+    color: black;
+    justify-self: end;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
 
 
 
