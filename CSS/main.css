@@ -51,6 +51,11 @@ header nav a{
     text-decoration: none;
     color: white;
     font-size: 1em;
+    transition:color 0.5s;
+}
+
+header nav a:hover{
+    color: rgb(153, 0, 241);
 }
 
 
@@ -251,7 +256,7 @@ footer p{
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 60%;
+    height: 70%;
    justify-content: space-around;
     align-items: center;
     margin: 10vh auto;
@@ -264,14 +269,15 @@ footer p{
 }
 
 .contact-form form:hover{
-    width: 32%;
-    height: 62%;
+    width: 31%;
+    height: 71%;
 }
 
 .contact-form form input{
     border-radius: 10px;
     padding: 4px;
     width: 80%;
+    border: none;
 }
 
 .contact-form form textarea{
@@ -279,10 +285,14 @@ footer p{
     border-radius: 10px;
     padding:4px;
     width: 80%;
+    border:none;
 }
 
-.contact-form form textarea,.contact-form form input:focus{
-   outline: none;
+.contact-form form textarea:focus,.contact-form form input:focus{
+   outline:none;
+   border: blue 3px solid;
+   
+   
   
    
 }
@@ -294,6 +304,19 @@ footer p{
 
 
 /*media queries*/
+
+@media only screen and (max-width: 974px){
+  .contact-form form{
+     
+      width: 70%;
+  }
+
+  .contact-form form:hover{
+      width:72%;
+      height: 72%;
+  }
+}
+
 @media only screen and (max-width:895px){
     .cars{
         height: auto;
