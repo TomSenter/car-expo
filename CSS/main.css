@@ -25,6 +25,8 @@ header{
     background-color: black;
     color: white;
     font-size: 1rem;
+   
+    
     
     
    
@@ -69,6 +71,7 @@ header nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 }
 
@@ -303,12 +306,49 @@ footer p{
 }
 
 
+/*about us page*/
+.about-page{
+    height: 240vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:repeat(6,1fr)/1fr 1fr 1fr;
+}
+
+.about-banner{
+    border: 1px solid red;
+    grid-area: 1/1/span 2/span 3;
+}
+
+.about-why-us{
+    grid-area:3/1/span 1/span 1;
+    border: 1px solid red;
+}
+
+.about-why-us-car{
+    border: 1px solid red;
+    grid-area: 3/2/span 1/span 2;
+}
+
+.about-banner2{
+    border: 1px solid red;
+    grid-area: 4/1/span 2/span 3;
+}
+
+.about-follow-pic{
+    grid-area: 6/1/span 1/span 1;
+    border: 1px solid red;
+}
+
+.about-follow{
+    border: 1px solid red;
+    grid-area: 6/2/span 1/span 2;
+}
+
 /*media queries*/
 
 @media only screen and (max-width: 974px){
   .contact-form form{
-     
-      width: 70%;
+     width: 70%;
   }
 
   .contact-form form:hover{
