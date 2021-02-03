@@ -339,6 +339,8 @@ footer p{
 .about-banner h2, .about-banner p{
     text-align: center;
     font-size: 0.9em;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /*why us section*/
