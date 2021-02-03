@@ -314,10 +314,34 @@ footer p{
     grid-template-areas:repeat(6,1fr)/1fr 1fr 1fr;
 }
 
+/*banner at the top */
+
 .about-banner{
-    border: 1px solid red;
-    grid-area: 1/1/span 2/span 3;
+   grid-area: 1/1/span 2/span 3;
+   position: relative;
+   font-size: 1rem;
+   opacity: 1;
+   color: red;
 }
+
+.about-banner::before{
+    content:'';
+    position: absolute;
+    background-image: url('../Images/about-banner.jpg');
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    background-position: bottom center;
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.about-banner h2, .about-banner p{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*why us section*/
 
 .about-why-us{
     grid-area:3/1/span 1/span 1;
