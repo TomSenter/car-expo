@@ -308,10 +308,10 @@ footer p{
 
 /*about us page*/
 .about-page{
-    height: 240vh;
+    height: 200vh;
     width: 100%;
     display: grid;
-    grid-template-areas:repeat(6,1fr)/1fr 1fr 1fr;
+    grid-template-areas:repeat(5,1fr)/1fr 1fr 1fr;
 }
 
 /*banner at the top */
@@ -336,7 +336,7 @@ footer p{
     height: 100%;
     width: 100%;
     background-position: bottom center;
-    opacity: 0.8;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -387,20 +387,56 @@ footer p{
 
 .about-banner2{
     grid-area: 4/1/span 2/span 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.about-banner2::before{
+    content: '';
     background-image: url('../Images/banner-2-car.jpg');
     background-size: cover;
     background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
 }
 
-.about-follow-pic{
-    grid-area: 6/1/span 1/span 1;
-    border: 1px solid red;
+.about-banner2 h2{
+    font-size: 1.2em;
+
 }
 
-.about-follow{
-    border: 1px solid red;
-    grid-area: 6/2/span 1/span 2;
+.about-banner2 p{
+    font-size: 0.8em;
+    width: 50%;
 }
+
+
+.about-banner2 a{
+    text-decoration: none;
+    color: purple;
+    border-radius: 5px;
+    width: 100px;
+    border: 2px solid purple;
+    background-color: white;
+}
+
+.about-banner2 a:hover{
+    color: white;
+    background-color: purple;
+   
+    
+}
+
+
 
 /*media queries*/
 
