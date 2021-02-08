@@ -335,7 +335,7 @@ footer p{
     background-size:cover;
     height: 100%;
     width: 100%;
-    background-position: bottom center;
+    background-position: 50% 80%;
     opacity: 0.6;
     z-index: -1;
 }
