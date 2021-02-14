@@ -1,5 +1,3 @@
-
-
 // get elements
 const lambo = document.getElementById('lambo');
 const bugatti = document.getElementById('bugatti');
