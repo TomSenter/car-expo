@@ -6,9 +6,7 @@ const bugatti = document.getElementById('bugatti');
 const ferarri = document.getElementById('ferarri');
 const mclaren = document.getElementById('mclaren');
 const carDisplay= document.querySelector('.car-display');
-const homeBurger = document.getElementById('burger-home');
-const aboutBurger = document.getElementById('burger-about');
-const contactBurger = document.getElementById('burger-contact');
+
 
 // event handler functions 
 
@@ -219,5 +217,20 @@ lambo.onclick = lamboDiv;
 bugatti.onclick = bugattiDiv;
 ferarri.onclick = ferarriDiv;
 mclaren.onclick = mclarenDiv;
+
+
+/*mobile burger menu js*/
+function toggleBurger(e){
+   e.target.classList.toggle('change');
+
+  document.getElementById('home-burger-menu').classList.toggle('show');
+}
+
+const homeBurger = document.getElementById('home-burger');
+
+homeBurger.onclick = toggleBurger;
+
+
+
 
 
