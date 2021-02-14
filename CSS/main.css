@@ -25,11 +25,6 @@ header{
     background-color: black;
     color: white;
     font-size: 1rem;
-   
-    
-    
-    
-   
 }
 
 
@@ -37,8 +32,6 @@ header h1{
     grid-column: 1 /span 1;
     margin-left: 5%;
     font-size: 2em;
-   
-    
 }
 
 
@@ -61,6 +54,10 @@ header nav a:hover{
 }
 
 
+
+
+
+
 /*background section*/
 
 .background{
@@ -71,8 +68,6 @@ header nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 /*animations*/
@@ -98,7 +93,6 @@ header nav a:hover{
    color: white;
    font-size: 1rem;
    box-shadow:0px 0px 50px black;
-   
 }
 
 .car-display h2{
@@ -110,11 +104,11 @@ header nav a:hover{
     display: flex;
     width: 85%;
     height: 85%;
-   margin: 1% auto;
-   border:8px inset rgb(153, 0, 241);
-   flex-wrap: wrap;
-   justify-content: center;
-  align-items: center;
+    margin: 1% auto;
+    border:8px inset rgb(153, 0, 241);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .cars img{
@@ -470,6 +464,11 @@ footer p{
     }
 
 }
+
+
+
+
+
 
 @media only screen and (max-width:665px){
     html{

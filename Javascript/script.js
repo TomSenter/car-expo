@@ -1,4 +1,4 @@
-// leave it as a module in the script tag so we can import modules in
+
 
 // get elements
 const lambo = document.getElementById('lambo');
@@ -6,6 +6,9 @@ const bugatti = document.getElementById('bugatti');
 const ferarri = document.getElementById('ferarri');
 const mclaren = document.getElementById('mclaren');
 const carDisplay= document.querySelector('.car-display');
+const homeBurger = document.getElementById('burger-home');
+const aboutBurger = document.getElementById('burger-about');
+const contactBurger = document.getElementById('burger-contact');
 
 // event handler functions 
 
@@ -216,6 +219,5 @@ lambo.onclick = lamboDiv;
 bugatti.onclick = bugattiDiv;
 ferarri.onclick = ferarriDiv;
 mclaren.onclick = mclarenDiv;
-
 
 
